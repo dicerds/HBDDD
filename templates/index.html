@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Birthday 🎉</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <audio autoplay loop>
+        <source src="/static/laguhbd.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="card">
+        <h1>🎉 Happy Birthday {{ data.name }} 🎉</h1>
+        <h2>Today you turn {{ data.age }}</h2>
+        <p>{{ data.message }}</p>
+        <button onclick="showSurprise()">🎁 Open Your Gift</button>
+        <div id="surprise" class="hidden">
+            <h3>You matter. More than you realize.</h3>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
